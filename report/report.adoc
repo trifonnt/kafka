@@ -82,7 +82,7 @@ The teams that develop each of them can now be responsible for the whole end-to-
 
 Of course, picking a microservice architectural approach does not come without additional implications.
 One such implication is that the microservices are not completely isolated semantically.
-Which means that their share common concepts.
+Which means that they share common concepts.
 For example the users defined in User Management service have their representations in all other modules.
 
 The rest of this paper will explain this implication in depth and will describe and compare possible solutions.
@@ -104,7 +104,7 @@ Another drawback of central database is that it is a one size fits all solution.
 Thus one of the most powerful features of the microservice architecture - independent technology decision of different services, is gone.
 On the other hand, if each service is allowed to pick and use its own data store, the services will determine the most effective way of storing their data. <<Hoehne,[5]>>
 
-Thus we come to the conclusion that that there are strong arguments for isolating each service's data in its own store.
+Thus we come to the conclusion that there are strong arguments for isolating each service's data in its own store.
 This is known as the _Database per service_ pattern <<Richardson,[6]>>.
 It mandates that the data should be kept private to the service and be accessible only via its public API.
 Thus it helps ensure that the services are loosely coupled: changes to one service context does not impact any other services.
