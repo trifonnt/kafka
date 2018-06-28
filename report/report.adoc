@@ -10,7 +10,7 @@ ivan_st_ivanov@yahoo.com
 
 *Paper Abstract*: This paper looks into the data persistence consequences of breaking monolith applications into multiple microservices.
 The higher scalability and improved lifecycle of separate deployments come with a cost: if data is persisted in a single storage, separate microservices can't be delivered independently; otherwise transaction boundaries can't be used to ensure data consistency.
-The paper looks into the different aspects of the data persistence in a microservices application and proposes optimal solutions for specific microservices usecases beyond those mentioned in general distributed systems research.
+The paper looks into the different aspects of the data persistence in a microservices application and proposes optimal solutions for specific microservices use cases beyond those mentioned in general distributed systems research.
 
 *Paper Keywords*: microservices, bounded contexts, data persistence, distributed systems, ACID
 
@@ -54,7 +54,7 @@ This server needs to be running on powerful hardware to meet the application res
 If in peak moments you decide to scale the application out by adding a new server, you have to purchase or borrow the same amount of hardware.
 Although the higher system requirements come just from the Store submodule, you must duplicate the whole server.
 
-Another usecase is with updating the application.
+Another use case is with updating the application.
 As its owner, you are delivering new features and bug fixes on a regular basis.
 As part of the monolith, you have to run significant set of tests across all the submodules in order to validate a small bug fix in the invoices generation for example.
 Or introduce unnecessary downtime in the Store for example, when you just want to deliver a small feature in the Forum.
